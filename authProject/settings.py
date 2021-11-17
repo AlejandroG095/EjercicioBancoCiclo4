@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -102,10 +103,10 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd8j5ans7n3mbq0',
-        'USER': 'sbqgulrfvqhcza',
-        'PASSWORD': '310024651f26ac87dc01a04ac32e4df7c1fae81181a0de0bee3774ddd86c0108',
-        'HOST': 'ec2-54-174-172-218.compute-1.amazonaws.com',
+        'NAME': 'd783ckmiq0hkj2',
+        'USER': 'xsuiicicfkxiqk',
+        'PASSWORD': 'a0ed203ea84d073b5b78ae835fda641629b5de8159f6da05eeee77651dc48b61',
+        'HOST': 'ec2-34-233-105-94.compute-1.amazonaws.com',
         'PORT': '5432',
         'TEST':{ 'MIRROR': 'default'},
     }
@@ -157,7 +158,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-import django_heroku
 django_heroku.settings(locals())
 
